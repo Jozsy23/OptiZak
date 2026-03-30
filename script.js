@@ -16,7 +16,7 @@ if (form && formNote) {
     const data = new FormData(form);
     const name = data.get("name");
 
-    formNote.textContent = `Thank you, ${name}. Your request has been received. We will contact you shortly.`;
+    formNote.textContent = `Îți mulțumim, ${name}. Solicitarea ta a fost primită. Te vom contacta în curând.`;
     form.reset();
   });
 }
