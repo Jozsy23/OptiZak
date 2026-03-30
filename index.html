@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OptiZak | Vezi bine, arăți bine</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="logo.jpg" />
     <meta
       name="description"
       content="OptiZak Brașov oferă consultanță personalizată pentru ochelari, suport optometric și recomandări adaptate stilului tău de viață."
@@ -119,6 +121,18 @@
         </div>
       </section>
 
+      <section id="posts" class="section">
+        <div class="container">
+          <h2>Ultimele postări de pe Facebook</h2>
+          <p>
+            Mai jos sunt afișate 3 postări încorporate. Pentru varianta „ultimele 3
+            automat”, este necesar un backend / API (Facebook blochează preluarea
+            direct din browser).
+          </p>
+          <div id="fb-posts" class="fb-posts" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section id="contact" class="section">
         <div class="container contact">
           <h2>Programează vizita</h2>
@@ -155,6 +169,7 @@
       </div>
     </footer>
 
+    <div id="fb-root"></div>
     <script src="script.js"></script>
   </body>
 </html>

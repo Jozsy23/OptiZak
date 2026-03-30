@@ -220,6 +220,27 @@ p {
   margin-top: 1.4rem;
 }
 
+.fb-posts {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fb-post {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.6rem;
+  box-shadow: 0 8px 18px rgba(0, 46, 74, 0.06);
+}
+
+.fb-post .fb-post-placeholder {
+  padding: 1rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -328,6 +349,7 @@ p {
 
   .hero-grid,
   .cards,
+  .fb-posts,
   .about {
     grid-template-columns: 1fr;
   }
